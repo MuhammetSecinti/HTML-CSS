@@ -1,0 +1,266 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif ;
+    box-sizing: border-box;
+}
+body{
+    background: #f0f2f5;
+    color: #5f5f5f;
+    font-size: 12px;
+}
+a{
+    text-decoration: none;
+    color: #5f5f5f;
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #fff ;
+    padding: 6px 6%;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+.logo img{
+    width: 30px;
+    margin-left: 15px;
+    display: block;
+}
+.navbar-center ul li{
+    display: inline-block;
+    list-style: none;
+}
+.navbar-center ul li a{
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    margin: 5px 8px;
+    padding-right: 5px;
+    position: relative;
+
+}
+.navbar-center ul li a i{
+    width: 30px;
+}
+.navbar-center ul li a::after{
+    content: "";
+    width:0;
+    height: 2px;
+    background: #045be6;
+    position: absolute;
+    bottom: -15px;
+    transition:width 0.3s ;
+}
+.navbar-center ul li a:hover::after,
+.navbar-center ul li a.active-link::after{
+    width: 100%;
+}
+.online img{
+    width: 40px;
+    border-radius: 50%;
+    display: block;
+    cursor: pointer;
+    position: relative;
+
+}
+.online{
+    position: relative;
+}
+.online::after{
+    content: "";
+    width: 7px;
+    height: 7px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    right: 0px;
+    top: 0px;
+    background: #41db51;
+    position: absolute;
+
+}
+.search-box{
+    background: #f0f2f5;
+    width: 100%;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    padding: 0 15px;
+}
+.navbar-left{
+    display: flex;
+    align-items: center;
+}
+.search-box i{
+    width: 14px;
+}
+.search-box input{
+    width: 100%;
+    background: transparent;
+    outline: none;
+    border: 0;
+    padding: 8px;
+}
+.bg-img{
+    width: auto;
+    height: 90px;
+}
+.p-photo{
+    width: 80px;
+    border-radius: 50%;
+    background: #fff;
+    padding: 4px;
+    margin-top: -45px;
+
+}
+
+
+
+/* .sidebar-activity{
+display: flex;
+} */
+.sidebar-activity a{
+    height: 30px;
+    display: flex;
+}
+.material-symbols-outlined{
+    font-size: 15px;
+}
+
+.create-post-input{
+    padding: 20px 25px 10px;
+    display: flex;
+    align-items: flex-start;
+}
+.create-post-input textarea{
+    width: 100%;
+    /* height: 40px; */
+    border-radius: 30px;
+    outline: 0;
+    resize: none;
+    background: transparent;
+    margin-top: 4px;
+}
+.create-post-link{
+    display: flex;
+    /* align-items:center; */
+    text-align: center;
+    margin-left: 80px;
+    margin-top: -15px;
+}
+.create-post-link li{
+    list-style: none;
+    flex-basis: 25%;
+    height: 40px;
+    font-size: 13px;
+    padding-top: 13px;
+}
+.create-post-link li:hover{
+    cursor: pointer;
+    border: 1px solid lightgray;
+    background-color:lightgray ;
+    border-radius: 10px;
+}
+.create-post-link-2{
+    display: flex;
+    /* text-align: center; */
+    justify-content: center;
+     
+    
+}
+.create-post-link-2 li{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    height: 40px;
+    font-size: 15px;
+    margin: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+.sort-by{
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+}
+.sort-by hr{
+    flex: 1;
+    
+    border: 0;
+    height: 1px;
+    background: #5f5f5f;
+}
+.sort-by p{
+    
+    font-size: 13px;
+    padding-left: 5px;
+
+}
+
+.sort-by p span{
+    /* display: inline-flex; */
+    font-size: 20px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.post-author{
+    padding: 5px;
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+.post p{
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+.post-stats{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 12px;
+    /* border-bottom: 1px solid ; */
+}
+.post-stats div{
+   display: flex;
+   align-items: center;
+}
+.post-stats .span-img{
+    width: 15px;
+    margin-right: -5px;
+}
+.post-stats .liked-users{
+    margin-left: 10px;
+}
+
+
+
+
+
+
+.add-feed{
+    list-style: none;
+    
+}
+.add-feed:hover{
+    
+        color: #5f5f5f;
+
+}
+
+.add-feed li button{
+    border-radius: 30px;
+}
+

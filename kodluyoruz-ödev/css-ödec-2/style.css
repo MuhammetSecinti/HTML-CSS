@@ -1,0 +1,23 @@
+body{
+   text-align: center;
+}
+h1{
+    color: red;
+}
+.form{
+    background-color:gainsboro;
+}
+a{
+  display: block;
+}
+.link{
+   
+    float: left;
+    width: 33%;
+    height:150px;
+    padding-top: 20px;
+    
+}
+footer{
+    margin-top: 100px;
+}
